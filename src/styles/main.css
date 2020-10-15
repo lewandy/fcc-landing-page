@@ -5,15 +5,30 @@
   --color-primary: #00dbd0;
 }
 
+html {
+  scroll-behavior: smooth;
+}
+
 body {
-  height: 100rem;
+  height: 100%;
   background-image: linear-gradient(#f1fefe, white);
   font-family: "Libre Baskerville", serif;
 }
 
+* {
+  transition: all 1s ease;
+}
+
 .main-container {
-  width: 70%;
+  width: 90%;
   margin: auto;
+}
+
+@media (min-width: 1400px) {
+  .main-container {
+    width: 60%;
+    margin: auto;
+  }
 }
 
 /* HEADER */
@@ -46,6 +61,8 @@ header {
 
 .contact-nav-link-container a {
   text-decoration: none;
+  height: auto;
+  color: var(--color-font);
 }
 
 .header-nav-title {
@@ -80,7 +97,7 @@ header {
 
 .hero-background-leafs {
   position: absolute;
-  right: 13rem;
+  right: 5rem;
   width: auto;
   top: 6rem;
   z-index: -1;
@@ -96,7 +113,7 @@ header {
   height: 50px;
   width: 190px;
   color: white;
-  margin-top: 17px;
+  margin-top: 30px;
   box-shadow: 2px 2px 8px whitesmoke;
   background-color: var(--color-primary);
 }
@@ -109,3 +126,84 @@ header {
 }
 
 /* END HERO AREA */
+
+/* WELCOME AREA */
+.welcome {
+  width: 100%;
+  margin-top: 10rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: var(--color-font);
+}
+
+.welcome div {
+  margin-bottom: 1.8rem;
+}
+
+.welcome-title {
+  font-size: xx-large;
+}
+
+.welcome-description {
+  font-size: 15px;
+  text-align: center;
+}
+
+.welcome-services {
+  display: flex;
+  width: 100%;
+  margin-top: 4rem;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.welcome-services-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  width: 15rem;
+  height: 18rem;
+  border: 1px dashed rgb(199, 198, 198);
+  border-radius: 23px;
+  margin-right: 1rem;
+}
+
+.item-active {
+  background: var(--color-primary);
+  color: white;
+}
+
+.item-active img {
+  filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+  -webkit-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+  -moz-filter: brightness(0%) saturate(0%) contrast(1000%) invert(100%);
+}
+
+.welcome-services-item p {
+  font-size: small;
+  text-align: center;
+}
+
+/* END WELCOME AREA */
+
+/* Testimonials */
+
+.testimonials {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  color: var(--color-font);
+  width: 100%;
+}
+
+.testimonial-icons {
+  display: flex;
+  margin-top: 2.9rem;
+  justify-content: space-evenly;
+  width: 100%;
+}
+
+/*  */
