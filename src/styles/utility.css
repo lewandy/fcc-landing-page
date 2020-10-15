@@ -1,0 +1,13 @@
+/* 
+This is utility classes 
+*/
+
+.inline-element {
+  display: inline-block;
+}
+
+.flex-row {
+  display: flex;
+  align-items: center;
+  flex-direction: row;
+}
