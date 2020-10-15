@@ -57,7 +57,55 @@ header {
 .header-nav-title-container {
   align-items: center;
   justify-content: space-between;
-  width: 280px;
+  width: 265px;
 }
 
 /* END HEADER */
+
+/* HERO AREA */
+
+.hero-container {
+  display: flex;
+  justify-content: space-between;
+  margin-top: 9rem;
+}
+
+.hero-title {
+  font-size: 3.3rem;
+}
+
+.hero-title-text {
+  font-size: x-large;
+}
+
+.hero-background-leafs {
+  position: absolute;
+  right: 13rem;
+  width: auto;
+  top: 6rem;
+  z-index: -1;
+  height: auto;
+}
+
+.hero-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 7px;
+  border: none;
+  height: 50px;
+  width: 190px;
+  color: white;
+  margin-top: 17px;
+  box-shadow: 2px 2px 8px whitesmoke;
+  background-color: var(--color-primary);
+}
+
+.hero-button a {
+  text-decoration: none;
+  color: white;
+  font-weight: bold;
+  font-size: 17px;
+}
+
+/* END HERO AREA */

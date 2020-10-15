@@ -2,6 +2,11 @@
 This is utility classes 
 */
 
+:root {
+  --color-font: #374b5c;
+  --color-primary: #00dbd0;
+}
+
 .inline-element {
   display: inline-block;
 }
@@ -10,4 +15,12 @@ This is utility classes
   display: flex;
   align-items: center;
   flex-direction: row;
+}
+
+.text-bold {
+  font-weight: bold;
+}
+
+.text-color-primary {
+  color: var(--color-font);
 }
