@@ -34,6 +34,10 @@ body {
   .hero-right {
     display: none;
   }
+
+  .header-right {
+    display: none;
+  }
 }
 
 /* HEADER */
@@ -206,7 +210,6 @@ header {
 
 .testimonial-icons {
   display: flex;
-  justify-content: center;
   margin-top: 2.9rem;
   width: 100%;
   overflow-x: scroll;
@@ -220,7 +223,7 @@ header {
   margin-right: 110px;
 }
 
-.testimonials-pagination {
+.pagination {
   display: flex;
   justify-content: center;
   width: 100%;
@@ -237,6 +240,40 @@ header {
 
 .pagination-item-active {
   background-color: var(--color-primary);
+}
+
+/*  */
+
+/* COMMENTS */
+
+.comments {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 7rem;
+  width: 100%;
+}
+
+.comments-quote {
+  margin-bottom: 1rem;
+}
+
+.comments-person {
+  margin-bottom: 1rem;
+}
+
+.comments-name {
+  margin-bottom: 1rem;
+}
+
+.comments-text {
+  text-align: center;
+  font-weight: 300;
+  color: var(--color-font);
+}
+
+.comments .pagination {
+  margin-top: 5px;
 }
 
 /*  */
