@@ -20,14 +20,19 @@ body {
 }
 
 .main-container {
-  width: 90%;
+  width: 95%;
   margin: auto;
 }
 
 @media (min-width: 1400px) {
   .main-container {
-    width: 60%;
-    margin: auto;
+    width: 70%;
+  }
+}
+
+@media (max-width: 923px) {
+  .hero-right {
+    display: none;
   }
 }
 
@@ -201,9 +206,37 @@ header {
 
 .testimonial-icons {
   display: flex;
+  justify-content: center;
   margin-top: 2.9rem;
-  justify-content: space-evenly;
   width: 100%;
+  overflow-x: scroll;
+}
+
+.testimonial-icons::-webkit-scrollbar {
+  display: none;
+}
+
+.testimonial-icons img:not(:last-child) {
+  margin-right: 110px;
+}
+
+.testimonials-pagination {
+  display: flex;
+  justify-content: center;
+  width: 100%;
+  margin-top: 3.5rem;
+}
+
+.pagination-item {
+  height: 10px;
+  margin-right: 15px;
+  border-radius: 50%;
+  background: var(--color-font);
+  width: 10px;
+}
+
+.pagination-item-active {
+  background-color: var(--color-primary);
 }
 
 /*  */
