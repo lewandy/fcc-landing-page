@@ -100,6 +100,16 @@ header {
   font-size: 3.3rem;
 }
 
+.hero-right {
+  align-self: center;
+  justify-self: center;
+}
+
+.hero-right img {
+  width: 100%;
+  height: auto;
+}
+
 .hero-title-text {
   font-size: x-large;
 }
@@ -277,3 +287,14 @@ header {
 }
 
 /*  */
+
+#figure-one {
+  position: absolute;
+  top: 125rem;
+}
+
+#figure-two {
+  position: absolute;
+  top: 150rem;
+  right: -5rem;
+}
