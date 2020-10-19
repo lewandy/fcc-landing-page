@@ -10,6 +10,7 @@ html {
 }
 
 body {
+  padding-bottom: 10rem;
   height: 100%;
   background-image: linear-gradient(#f1fefe, white);
   font-family: "Libre Baskerville", serif;
@@ -33,6 +34,10 @@ body {
 @media (max-width: 923px) {
   .hero-right {
     display: none;
+  }
+
+  .hero-container {
+    justify-content: center !important;
   }
 
   .header-right {
@@ -298,3 +303,81 @@ header {
   top: 150rem;
   right: -5rem;
 }
+
+/* Subscribe section */
+
+.subscribe-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-self: center;
+  width: 100%;
+  margin-top: 8rem;
+}
+
+.subscribe-input-group input {
+  border: none;
+}
+
+.subscribe-input-group button {
+  border: none;
+  background-color: var(--color-primary);
+  color: white;
+  font-size: medium;
+  border-radius: 22px;
+  height: 3.1rem;
+  width: 8rem;
+}
+
+.blog-section {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  margin-top: 12rem;
+}
+
+/*  */
+
+/* Our blog section */
+
+.blog-cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin-top: 2rem;
+}
+
+.blog-cards-container div:not(:last-child) {
+  margin-right: 3rem;
+}
+
+.card {
+  display: grid;
+  grid-template-rows: 50% 50%;
+  grid-template-columns: 100%;
+  height: 400px;
+  width: 300px;
+  border-radius: 30px 30px 0px 0px;
+  border: none;
+}
+
+.card-botton {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.card-botton h4 {
+  color: #00dbd0;
+  margin-bottom: 0px;
+  margin-top: 26px;
+}
+
+.card-botton p {
+  text-align: center;
+  font-size: small;
+  color: var(--color-font)  
+}
+
+/* End our blog section */

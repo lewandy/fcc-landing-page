@@ -11,6 +11,10 @@ This is utility classes
   display: inline-block;
 }
 
+.decoration-none {
+  text-decoration: none;
+}
+
 .flex-row {
   display: flex;
   align-items: center;
