@@ -102,6 +102,7 @@ header {
   display: flex;
   justify-content: space-between;
   margin-top: 9rem;
+  align-items: center;
 }
 
 .hero-title {
@@ -233,6 +234,12 @@ header {
   overflow-x: scroll;
 }
 
+@media (min-width: 500px) {
+  .testimonial-icons {
+    justify-content: center;
+  }
+}
+
 .testimonial-icons::-webkit-scrollbar {
   display: none;
 }
@@ -355,6 +362,12 @@ header {
   margin-right: 3rem;
 }
 
+@media (max-width: 500px) {
+  .blog-cards-container div {
+    margin-right: 0px !important;
+  }
+}
+
 .card {
   display: grid;
   grid-template-rows: 50% 50%;
@@ -387,14 +400,16 @@ header {
 
 footer {
   margin-top: 6rem;
-  padding-top: 80px;
   position: static;
   display: grid;
-  grid-template-columns: repeat(auto-fit, 186px);
+  grid-template-columns: auto auto auto;
   grid-template-rows: auto;
-  justify-content: space-between;
+  grid-auto-flow: column;
   background-image: url("../assets/footer-bg.svg");
-  height: fit-content;
+  background-size: auto 100%;
+  background-repeat: inherit;
+  padding-bottom: 25px;
+  padding-top: 80px;
   padding-left: 15%;
   padding-right: 15%;
   color: white;
@@ -403,13 +418,13 @@ footer {
 footer p {
   margin-top: 30px;
   margin-bottom: 28px;
-  font-size: 15px;
+  font-size: 13px;
   font-weight: 100;
   color: whitesmoke;
 }
 
 footer .green-line {
-  width: 20%;
+  width: 80px;
   height: 3px;
   background: var(--color-primary);
 }
@@ -418,4 +433,34 @@ footer h4 {
   font-size: 14px;
   font-weight: bold;
   margin-top: 10px;
+}
+
+footer .footer-center ul {
+  padding-left: 0px;
+}
+
+footer h4 {
+  font-weight: bold;
+}
+
+footer .footer-center li {
+  margin-bottom: 15px;
+  font-size: 15px;
+}
+
+footer .social-links {
+  display: flex;
+  margin-top: 1.5rem;
+}
+
+footer .social-links img:not(:last-child) {
+  margin-right: 10px;
+}
+
+@media (max-width: 480px) {
+  footer {
+    grid-template-columns: auto;
+    grid-template-rows: auto auto auto;
+    padding-top: 8rem;
+  }
 }
