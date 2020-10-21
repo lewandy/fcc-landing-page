@@ -10,7 +10,10 @@ html {
 }
 
 body {
-  padding-bottom: 10rem;
+  padding-bottom: 0px;
+  margin-bottom: 0px;
+  margin-right: 0px;
+  margin-left: 0px;
   height: 100%;
   background-image: linear-gradient(#f1fefe, white);
   font-family: "Libre Baskerville", serif;
@@ -377,7 +380,42 @@ header {
 .card-botton p {
   text-align: center;
   font-size: small;
-  color: var(--color-font)  
+  color: var(--color-font);
 }
 
 /* End our blog section */
+
+footer {
+  margin-top: 6rem;
+  padding-top: 80px;
+  position: static;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, 186px);
+  grid-template-rows: auto;
+  justify-content: space-between;
+  background-image: url("../assets/footer-bg.svg");
+  height: fit-content;
+  padding-left: 15%;
+  padding-right: 15%;
+  color: white;
+}
+
+footer p {
+  margin-top: 30px;
+  margin-bottom: 28px;
+  font-size: 15px;
+  font-weight: 100;
+  color: whitesmoke;
+}
+
+footer .green-line {
+  width: 20%;
+  height: 3px;
+  background: var(--color-primary);
+}
+
+footer h4 {
+  font-size: 14px;
+  font-weight: bold;
+  margin-top: 10px;
+}
