@@ -237,6 +237,9 @@ header {
 @media (min-width: 500px) {
   .testimonial-icons {
     justify-content: center;
+    width: 100%;
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
 
@@ -457,7 +460,7 @@ footer .social-links img:not(:last-child) {
   margin-right: 10px;
 }
 
-@media (max-width: 480px) {
+@media (max-width: 500px) {
   footer {
     grid-template-columns: auto;
     grid-template-rows: auto auto auto;
