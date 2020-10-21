@@ -19,7 +19,7 @@ body {
   font-family: "Libre Baskerville", serif;
 }
 
-* {
+.main-container {
   transition: all 1s ease;
 }
 
